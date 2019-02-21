@@ -5,7 +5,7 @@
         "storageAccount": {
             "type": "string",
             "metadata": {
-                "description": "Storage Account Name - must be unique"
+                "description": "Storage Account Name"
             }
         },
         "accountType": {
@@ -25,8 +25,8 @@
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2018-07-01",
             "name": "[parameters('storageAccount')]",
+            "apiVersion": "2018-07-01",
             "location": "[resourceGroup().location]",
             "tags": {
                 "displayName": "[parameters('storageAccount')]"
