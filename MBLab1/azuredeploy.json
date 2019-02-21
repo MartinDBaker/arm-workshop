@@ -7,10 +7,10 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2018-07-01",
-            "name": "MBTestZZR1100sa",
+            "name": "mbtestzzr1100sa",
             "location": "[resourceGroup().location]",
             "tags": {
-                "displayName": "MBTestZZR1100sa"
+                "displayName": "mbtestzzr1100sa"
             },
             "sku": {
                 "name": "Standard_LRS"
