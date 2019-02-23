@@ -1,0 +1,1 @@
+az group deployment create --name $job --template-file $template --resource-group $rg --parameters storageAccount=mbtestzzr1100sa2
