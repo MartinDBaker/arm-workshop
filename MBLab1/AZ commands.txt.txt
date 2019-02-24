@@ -1,1 +1,9 @@
+az login
+az account set --subscription <yourSubscriptionName>
+az group create --name lab1 --location westeurope
 az group deployment create --name $job --template-file $template --resource-group $rg --parameters storageAccount=mbtestzzr1100sa2
+az group deployment validate; to validate the synatax of a template file
+az storage account list --resource-group lab1 --output table
+
+
+Valid paramaters string: parms="storageAccount=richeneysa3 accountType=Premium_LRS"
